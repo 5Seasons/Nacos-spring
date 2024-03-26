@@ -1,0 +1,16 @@
+server:
+  port: 58080
+
+spring:
+  application:
+    name: testDubbo
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:58849
+        username: nacos
+        password: nacos
+      discovery:
+        server-addr: 127.0.0.1:58849
+        username: nacos
+        password: nacos

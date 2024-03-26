@@ -1,0 +1,18 @@
+
+dubbo:
+  application:
+    name: test-dubbo
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20885
+  provider:
+    parameters:
+      telnet: "cd,clear,count,pwd,exit,invoke,log,ps,select,shutdown,status,trace,help,ls"
+spring:
+  application:
+    name: testDubbo
+  cloud:
+    bootstrap:
+      enabled: true
